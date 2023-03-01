@@ -8,3 +8,4 @@ def get_products():
 def update_products(products):
     with open("db.json", "w") as file:
         json.dump(products, file)
+
