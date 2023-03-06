@@ -1,4 +1,5 @@
 venv/
 db.json
 images/
+.env
 
