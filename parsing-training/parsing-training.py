@@ -1,14 +1,10 @@
-import requests
 from bs4 import BeautifulSoup
+import requests
+import csv
 
-def get_html(url):
-    response = requests.get(url)
-    response.status_code
-    
-def main():
-    stack_url = 'https://stackoverflow.com/questions'
-    pages = '?page='
-    get_html(stack_url)
-source = response.status_code
-print(source)
-main()
+access1 = requests.get('https://www.wikipedia.org/')
+page_1 = BeautifulSoup(access1, 'lxml')
+my_page = page_1.find_all('a', 'title')
+print(my_page.text)
+
+# id="js-link-box-de" href="//de.wikipedia.org/" title="Deutsch — Wikipedia — Die freie Enzyklopädie"

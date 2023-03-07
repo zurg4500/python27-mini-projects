@@ -1,0 +1,5 @@
+pytelegrambotapi
+python-decouple
+requests
+lxml
+beautifulsoup4
